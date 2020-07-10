@@ -11,6 +11,8 @@ app.get("/", (req, res) => {
 app.get("/convert", (req, res) => {
   const url = req.query.url;
 
+  if (!url) res.send("Missing url query parameter");
+
   const converter = spawn("node", ["client.js", url]);
 
   let buffs = [];
