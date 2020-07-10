@@ -1,0 +1,18 @@
+version: "3.3"
+services:
+  puppeteer:
+    build:
+      context: ./docker-puppeteer
+      dockerfile: Dockerfile
+    image: puppeteer
+    container_name: puppeteer
+    volumes:
+      - type: bind
+        source: ./docker-puppeteer
+        target: /app
+      - type: volume
+        source: ./vol
+        target: /files
+volumes:
+  vol:
+    driver: local
