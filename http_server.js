@@ -4,6 +4,10 @@ const { spawn } = require("child_process");
 const app = express();
 const port = 1111;
 
+app.get("/", (req, res) => {
+  res.send("Available endpoint(s): /convert");
+});
+
 app.get("/convert", (req, res) => {
   const url = req.query.url;
 
