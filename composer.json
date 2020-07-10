@@ -1,0 +1,6 @@
+{
+    "name": "lukabartolic/browsershot_test",
+    "require": {
+        "guzzlehttp/guzzle": "^7.0"
+    }
+}
