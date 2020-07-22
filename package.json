@@ -11,7 +11,8 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start:http": "node src/http_server"
+    "start:http": "node src/http_server",
+    "command:generate": "node src/client"
   },
   "repository": {
     "type": "git",
