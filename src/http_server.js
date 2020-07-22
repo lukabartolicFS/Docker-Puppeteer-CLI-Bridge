@@ -5,7 +5,7 @@ const bodyParser = require("body-parser");
 const { spawn } = require("child_process");
 
 const app = express();
-const port = 1111;
+const port = process.env.PORT || 8888;
 
 const clientPath = path.join(__dirname, "client.js");
 
