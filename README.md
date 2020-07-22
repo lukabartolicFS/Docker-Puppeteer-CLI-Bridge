@@ -59,7 +59,7 @@ Either the `url` or `html` needs to be provided as the parameter
 Response is a Base64 encoded data of generated binary file. Decode it and store it as a file or use its decoded buffered data as you wish.
 I.e. in PHP: `$pdfBinary = base64_decode($response->getBody()->getContents());`
 
-## CLI
+### CLI
     npm run command:generate <url|html> <value>
 - if using `url` the `value` must be a valid URL
 - if using `html` the `value` must be a HTML
