@@ -48,6 +48,8 @@ PDFs can be generated using following approaches:
 
 **POST /convert**
 
+`Content-Type: application/json`
+
 |Parameter|Sample value|Note
 |--|--|--|
 |url|https://www.google.com/|Required if `html` is not provided
