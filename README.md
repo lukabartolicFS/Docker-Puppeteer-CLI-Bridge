@@ -68,4 +68,4 @@ Example:
 
     npm run command:generate url https://www.google.com/ > file.pdf
     
-- outputs generated PDF file into a file named `file.pdf`.
+(outputs generated PDF file into a file named `file.pdf`)
