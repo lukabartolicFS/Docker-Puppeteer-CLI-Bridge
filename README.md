@@ -46,7 +46,7 @@ PDFs can be generated using following approaches:
     PORT=1111 npm run start:http
 **Make a request:**
 
-    **POST /convert**
+**POST /convert**
 
 |Parameter|Sample value|Note
 |--|--|--|
