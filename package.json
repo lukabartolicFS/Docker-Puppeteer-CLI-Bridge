@@ -1,0 +1,27 @@
+{
+  "name": "browsershot_test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "client.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "uuid": "^8.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:http": "node src/http_server",
+    "command:generate": "node src/client"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lukabartolicFS/Docker-Puppeteer-CLI-Bridge.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lukabartolicFS/Docker-Puppeteer-CLI-Bridge/issues"
+  },
+  "homepage": "https://github.com/lukabartolicFS/Docker-Puppeteer-CLI-Bridge#readme"
+}

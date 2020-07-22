@@ -1,8 +1,16 @@
 const { spawn } = require("child_process");
 
-const url = process.argv[2];
+const type = process.argv[2];
+const source = process.argv[3];
 
-const dockerRunner = spawn("docker", ["run", "puppeteer", `${url}`]);
+if (!type || !source) throw Error("Missing type and/or source parameters");
+
+const dockerRunner = spawn("docker", [
+  "run",
+  "puppeteer",
+  `${type}`,
+  `${source}`,
+]);
 
 dockerRunner.stdout.on("data", (data) => {
   /*

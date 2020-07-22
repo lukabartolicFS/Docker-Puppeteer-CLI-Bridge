@@ -11,8 +11,8 @@ services:
         source: ./docker-puppeteer
         target: /app
       - type: volume
-        source: ./vol
-        target: /files
+        source: puppeteer_exports
+        target: /static/exports
 volumes:
-  vol:
+  puppeteer_exports:
     driver: local
