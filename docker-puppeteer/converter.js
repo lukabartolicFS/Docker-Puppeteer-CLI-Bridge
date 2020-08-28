@@ -28,6 +28,7 @@ const uuid = require("uuid");
   const pdfOptions = {
     path: `${basePath}/${fileName}.pdf`,
     format: "A4",
+    printBackground: true,
     margin: {
       top: 0,
       right: 0,
